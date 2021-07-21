@@ -1,0 +1,23 @@
+
+.login__fab-Button {
+  &:hover {
+    animation: sides .7s backwards infinite;
+  }
+}
+
+
+@keyframes sides {
+  0% {
+      transform: translate(0, 0px);
+  }
+
+  50% {
+      transform: translate(-10px, 0px);
+  }
+  
+
+  100% {
+      transform: translate(0, 0px);
+      
+  }
+}

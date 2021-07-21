@@ -1,0 +1,137 @@
+.dash__main {
+  padding: 1rem;
+  height: 90vh;
+}
+
+.dash__container {
+  display: grid;
+  // grid-template-columns: 1fr 1fr;
+  height: 100%;
+  
+}
+
+.dash__title-main {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.dash__right-module {
+  height: fit-content;
+  width: fit-content;
+
+  display: grid;
+  grid-gap: 1rem;
+  place-self: center;
+
+  grid-template-areas: 
+  "a b c"
+  "d e f";
+
+  
+}
+
+.dash__modules-option_menu {
+  height: 170px;
+  width: 170px;
+  border-radius: 10px;
+  text-align: center;
+
+  padding: 1rem;
+  
+  place-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  
+
+}
+
+.dash__modules-option_enabled {
+  background-color: #fd8264;
+  cursor: pointer;
+  transition: background-color .5s ease;
+
+ 
+
+  &:hover{ 
+    background-color: darken($color: #F675B4, $amount: 15);
+
+  }
+
+  &:hover .dash__module-link_enabled {
+    color: #035252;
+  }
+
+  
+}
+
+
+.dash__modules-option_disabled {
+  background-color: #a9a9a9;
+  cursor: pointer;
+  transition: background-color .5s ease;
+  &:hover{ 
+    background-color: darken($color: #a9a9a9, $amount: 5);
+    
+  }
+
+  &:hover .dash__module-link_enabled {
+    color: #313131;
+  }
+}
+
+.dash__module-link_enabled {
+  color: #000000;
+  transition: color .5s ease;
+  font-size: 1.5rem;
+
+}
+
+.dash__module-link_disabled {
+  color: #424242;
+  transition: color .5s ease;
+  font-size: 1.5rem;
+}
+
+.dash__icon-disabled {
+  filter: grayscale(1);
+  transition: filter .5s ease;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+
+@media only screen and (max-width: $MaxWidth-tablet) {
+  .dash__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dash__right-module {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem; 
+  }
+}
+
+@media only screen and (max-width: $MaxWidth-phone) {
+
+  .dash__modules-option_menu {
+    margin-right: 0.5rem;
+  }
+
+  .dash__title-main {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem !important;
+    padding: 0;
+  }
+}

@@ -1,0 +1,119 @@
+.info__container {
+
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+
+}
+
+.info__profile-container {
+  background-color: #313343;
+}
+
+.info__profile-user {
+  background-color: #A48BD5;
+  display: flex;
+  align-items: center;
+  height: 75px;
+  padding: 0.5rem;
+
+}
+
+.info__data-container {
+  display: grid;
+  grid-template-rows: 15%;
+
+  h1 {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.info__title {
+  h2{
+    font-style: italic;
+  }
+  h2, p {
+    margin-left: 1rem;
+    color: aliceblue;
+  }
+}
+
+.info__img {
+  border: 1px #353434 solid;
+}
+
+.info__text, .info__icon {
+  color: #f0f8ff;
+}
+
+
+.info__icon {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contracts__container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+
+}
+
+.contracts__info-container {
+  display: flex;
+  min-height: 20rem;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: $MaxWidth-tablet) {
+  .info__profile-container {
+    display: none;
+  }
+
+  .contracts__info-container {
+    width: 100vw;
+  }
+
+  .contracts__container {
+    padding: 0;
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: $MaxWidth-phone) {
+  .contracts__container {
+    width: unset;
+  }
+
+  .contracts__info-container {
+    width: 100%;
+  }
+
+  .info__profile-container {
+    display: none;
+  }
+
+  .info__data-container {
+    width: 100vw;
+  }
+
+  .info__container {
+    display: block;
+  }
+
+  .info__title {
+    h2, p {
+      display: none;
+    }
+  }
+
+  .info__text {
+    display: none;
+  }
+}
+

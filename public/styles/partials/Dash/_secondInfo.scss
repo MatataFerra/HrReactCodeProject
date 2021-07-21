@@ -1,0 +1,23 @@
+
+.secondInfo__second-info {
+  box-shadow: 0px 10px 10px -6px black;
+  border-radius: 5px;
+  padding: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  div {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: $MaxWidth-phone) {
+  .secondInfo__second-info {
+    width: unset;
+  }
+}
+
+
+

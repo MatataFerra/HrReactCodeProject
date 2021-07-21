@@ -1,0 +1,21 @@
+.employees__main-container {
+  display: grid;
+  grid-template-rows: 10% 15% 40%;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus, .MuiDataGrid-root .MuiDataGrid-cell:focus {
+  outline: none !important;
+}
+
+.employees__buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+
+.employees__button-edit,
+.employees__button-delete{
+  width: 30px;
+  
+}

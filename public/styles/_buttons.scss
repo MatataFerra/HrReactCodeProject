@@ -1,0 +1,99 @@
+$height: 40px;
+
+.buttons__btn-Login {
+  
+  cursor: pointer;
+  width: 25%;
+  height: $height;
+  background: #FFD240;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  margin-right: 1.5rem;
+
+  transition: .3s background ease;
+
+
+  &:hover {
+    background: darken($color: #FFD240, $amount: 20);
+  }
+
+  &:hover .buttons__btn-anchor {
+    color: aliceblue;
+  }
+
+  .buttons__btn-anchor {
+      text-decoration: none;
+      line-height: $height;
+      color: black;
+
+      transition: .3s color ease;
+  }
+}
+
+
+.buttons__btn-Register {
+  background: transparent;
+  border: 1px solid #64EB4B;
+
+  cursor: pointer;
+  width: 25%;
+  height: $height;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  transition: .3s background ease;
+
+  &:hover .buttons__btn-anchor {
+    color: aliceblue;
+  }
+
+  .buttons__btn-anchor {
+    text-decoration: none;
+    line-height: $height;
+    color: black;
+
+    transition: .3s color ease;
+}
+  
+}
+
+.button__query-modal {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: $MaxWidth-tablet) {
+  .buttons__btn-Register,
+  .buttons__btn-Login {
+    width: 35%;
+    margin-top: 1rem;
+  }
+
+  .button__query-modal {
+    margin-top: 1rem;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -6px black;
+  }
+}
+
+@media only screen and (max-width: $MaxWidth-phone) {
+  .buttons__btn-Register,
+  .buttons__btn-Login {
+    width: 35%;
+    margin-top: 1rem;
+  }
+
+  .button__query-modal {
+    margin-top: 1rem;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -6px black;
+  }
+}

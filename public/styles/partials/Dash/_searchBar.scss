@@ -1,0 +1,55 @@
+
+.search__container {
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  height: fit-content;
+  transition: all .3s ease;
+}
+
+.search__field-container {
+  border: 1px solid black;
+  min-width: 30rem;
+  border-radius: 20px;
+  padding: 0.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search__input{
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+
+}
+
+
+@media only screen and (max-width: $MaxWidth-tablet) {
+  .search__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search__field-container {
+    min-width: 20rem;
+  }
+}
+
+@media only screen and (max-width: $MaxWidth-phone) {
+
+  .search__field-container {
+    min-width: 10rem;
+  }
+
+  .search__container {
+    margin: 1rem auto;
+  }
+
+}
+
+

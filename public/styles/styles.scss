@@ -1,0 +1,72 @@
+
+/* Global configurations */
+@import './global_setings/config';
+
+@import 'fonts';
+@import 'buttons';
+@import './partials/Description/description';
+@import './partials/Home/home';
+@import './partials/Login/login';
+@import './partials/Dash/navbar';
+@import './partials/Dash/dash';
+@import './partials/Dash/searchBar';
+@import './partials/Dash/textFields';
+@import './partials/Dash/employees';
+@import './partials/Dash/info';
+@import './partials/Dash/firstInfo';
+@import './partials/Dash/secondInfo';
+
+
+
+body {
+  font-family: $fontFamilyRegular;
+  background: linear-gradient(
+    90deg
+    , #1aedf3 0%, #10a0a4 100%);
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+
+  &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      display: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+      width:10px;
+  }
+
+  &::-webkit-scrollbar-button:increment,&::-webkit-scrollbar-button {
+      display: none;
+  } 
+
+  &::-webkit-scrollbar:horizontal {
+      height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: #797979;
+      border-radius: 20px;
+      border: 2px solid #f1f2f3;
+  }
+
+  &::-webkit-scrollbar-track {
+      border-radius: 10px;  
+  }
+}
+
+.parraf__black {
+  font-family: $fontFamilyBold;
+}
+
+#root {
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.MuiBackdrop-root {
+  background-color: none !important;
+}
